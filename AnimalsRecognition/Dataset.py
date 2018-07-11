@@ -25,7 +25,7 @@ class Dataset():
 
     def oneHot(self, y):
         y_oneHot = [0] * self.numLabels
-        y_oneHot[y] = 1
+        y_oneHot[self.labelsDict[y]] = 1
         return y_oneHot
 
     def processImage(self, image):
@@ -38,17 +38,17 @@ class Dataset():
         return image, output
 
     def makeBatchData(self, batchSize=100):
-        batch = {"images": [], "labels": []}
+        batch = {"images": [], "outputs": []}
         for _ in range(batchSize):
             image, output = self.makeData()
             batch["images"].append(image)
-            batch["labels"].append(output)
+            batch["outputs"].append(output)
         return batch
 
     def getClass(self, oneHotClass):
-        state = self.labels.index() + 1
+        state = oneHotClass.index(oneHotClass.(max(oneHotClass))) + 1 # it return the index of the element that has max value
         for key in self.labelsDict:
             value = self.labelsDict[key]
-            if (value == state):
+            if value == state:
                 return key
         raise Exception("Invalid Output One Hot Vector")
