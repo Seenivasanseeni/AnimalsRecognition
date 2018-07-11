@@ -46,7 +46,7 @@ class Dataset():
         return batch
 
     def getClass(self, oneHotClass):
-        state = oneHotClass.index(oneHotClass.(max(oneHotClass))) + 1 # it return the index of the element that has max value
+        state = oneHotClass.index(max(oneHotClass)) + 1 # it return the index of the element that has max value
         for key in self.labelsDict:
             value = self.labelsDict[key]
             if value == state:
