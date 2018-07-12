@@ -3,7 +3,7 @@ import os
 from collections import deque
 import matplotlib.pyplot as plt
 from skimage.transform import  resize
-
+import random
 
 def makeLabelsDict(labels):
     labelsDict = {}
@@ -19,6 +19,12 @@ def makeQueue(dir):
     for file in os.listdir(dir):
         Q.append(os.path.join(dir,file))
     return Q
+
+def randomDataPath(Q):
+    index=random.randrange(0,len(Q))
+    path=Q[index]
+    Q.remove(path)
+    return path
 
 
 class Dataset():
@@ -64,11 +70,11 @@ class Dataset():
 
     def makeData(self,train=True):
         if(not train): #make test Data
-            path=self.testDataQueue.popleft()
+            path=randomDataPath(self.testDataQueue.popleft())
             image=self.getData(path,train)
             return image
 
-        path = self.trainDataQueue.popleft()
+        path = randomDataPath(self.trainDataQueue)
 
         image, output = self.getData(path)
 

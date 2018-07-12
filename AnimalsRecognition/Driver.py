@@ -5,7 +5,7 @@ def train(Mod,Ds):
 
     num=1000
     for i in range(num):
-        batch=Ds.makeBatchData(100)
+        batch=Ds.makeBatchData(10)
         plt.imshow(batch["images"][0])
         plt.show()
         acc,lo=Mod.train(batch["images"],batch["outputs"])
