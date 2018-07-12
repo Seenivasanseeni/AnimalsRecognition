@@ -42,6 +42,11 @@ class Dataset():
         self.labels = self.config["labels"]
         self.numLabels = len(self.labels)
         self.labelsDict = makeLabelsDict(self.labels)
+
+        #images regarding
+        self.imageSize=self.config["imageSize"]
+        self.channels=self.config["channels"]
+
         return
 
     def oneHot(self, y):
@@ -50,8 +55,7 @@ class Dataset():
         return y_oneHot
 
     def processImage(self, image): #Todo Do the reshpaing of data to fix the size
-        image=image[:,:,0]
-        image=resize(image,output_shape=[250,250])
+        image=resize(image,output_shape=[self.imageSize,self.imageSize,self.channels])
         return image
 
     def getLabel(self,path):
@@ -70,7 +74,7 @@ class Dataset():
 
     def makeData(self,train=True):
         if(not train): #make test Data
-            path=randomDataPath(self.testDataQueue.popleft())
+            path=randomDataPath(self.testDataQueue)
             image=self.getData(path,train)
             return image
 

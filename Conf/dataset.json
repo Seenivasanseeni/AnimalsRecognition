@@ -3,5 +3,6 @@
   "train":"train",
   "test":"test",
   "labels":["cat","dog"],
-  "imageSize":250
+  "imageSize":250,
+  "channels":3
 }

@@ -8,14 +8,15 @@ class Model():
             self.config=json.load(file)
             self.imageSize=self.config["imageSize"]
             self.numClasses=len(self.config["labels"])
+            self.channels=self.config["channels"]
         return
 
     def createCompGraph(self):
-        self.input = tf.placeholder(tf.float32, shape=[None, self.imageSize, self.imageSize], name="input")
+        self.input = tf.placeholder(tf.float32, shape=[None, self.imageSize, self.imageSize,self.channels], name="input")
         self.output = tf.placeholder(tf.float32, shape=[None, self.numClasses], name="output")
 
         # Todo 2 specify the model
-        inputImage = tf.reshape(self.input, shape=[-1, self.imageSize, self.imageSize, 1])
+        inputImage = tf.reshape(self.input, shape=[-1, self.imageSize, self.imageSize, self.channels])
 
         conv1 = tf.layers.conv2d(inputImage, 32, kernel_size=[5, 5], strides=(2, 2), padding="SAME")
         conv1 = tf.layers.conv2d(inputImage, 32, kernel_size=[5, 5], strides=(2, 2), padding="SAME")
