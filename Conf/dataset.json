@@ -2,5 +2,6 @@
   "root": "/mnt/Backup/Dataset/CatsAndDogs",
   "train":"train",
   "test":"test",
-  "labels":["cat","dog"]
+  "labels":["cat","dog"],
+  "imageSize":250
 }

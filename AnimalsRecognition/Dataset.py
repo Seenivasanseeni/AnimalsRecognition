@@ -2,6 +2,7 @@ import json
 import os
 from collections import deque
 import matplotlib.pyplot as plt
+from skimage.transform import  resize
 
 
 def makeLabelsDict(labels):
@@ -43,6 +44,8 @@ class Dataset():
         return y_oneHot
 
     def processImage(self, image): #Todo Do the reshpaing of data to fix the size
+        image=image[:,:,0]
+        image=resize(image,output_shape=[250,250])
         return image
 
     def getLabel(self,path):
@@ -50,17 +53,22 @@ class Dataset():
         label=file.split(".",1)[0]
         return label
 
-    def getData(self,path):
+    def getData(self,path,train=True):
         image=plt.imread(path)
+        if(not train):
+            return image
+
         label=self.getLabel(path)
         return image,label
 
 
     def makeData(self,train=True):
-        if(train):
-            path=self.trainDataQueue.popleft()
-        else:
+        if(not train): #make test Data
             path=self.testDataQueue.popleft()
+            image=self.getData(path,train)
+            return image
+
+        path = self.trainDataQueue.popleft()
 
         image, output = self.getData(path)
 

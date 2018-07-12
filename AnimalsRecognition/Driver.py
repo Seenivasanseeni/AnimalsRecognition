@@ -1,12 +1,14 @@
 from . import Model,Dataset
-
+import matplotlib.pyplot as plt
 
 def train(Mod,Ds):
 
     num=1000
     for i in range(num):
-        batch=Ds.makeBatchData(1000)
-        acc,lo=Mod.train(batch["input"],batch["output"])
+        batch=Ds.makeBatchData(100)
+        plt.imshow(batch["images"][0])
+        plt.show()
+        acc,lo=Mod.train(batch["images"],batch["outputs"])
         print("TimeStep %d accuracy %f Loss %f" %(i,acc,lo))
     return
 
@@ -17,7 +19,7 @@ def main():
     Mod=Model.Model()
     Mod.createCompGraph()
     Mod.intializeModel()
-    Ds=Dataset.Dataset(configLocation="../conf/data.json")
+    Ds=Dataset.Dataset(configLocation="Conf/dataset.json")
     train(Mod,Ds)
     return
 
