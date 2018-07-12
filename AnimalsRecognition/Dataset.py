@@ -54,7 +54,7 @@ class Dataset():
         y_oneHot[self.labelsDict[y]] = 1
         return y_oneHot
 
-    def processImage(self, image): #Todo Do the reshpaing of data to fix the size
+    def processImage(self, image):
         image=resize(image,output_shape=[self.imageSize,self.imageSize,self.channels])
         return image
 

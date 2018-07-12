@@ -5,9 +5,7 @@ def train(Mod,Ds):
 
     num=1000
     for i in range(num):
-        batch=Ds.makeBatchData(10)
-        plt.imshow(batch["images"][0])
-        plt.show()
+        batch=Ds.makeBatchData(100)
         acc,lo=Mod.train(batch["images"],batch["outputs"])
         print("TimeStep %d accuracy %f Loss %f" %(i,acc,lo))
     return
