@@ -15,7 +15,6 @@ class Model():
         self.input = tf.placeholder(tf.float32, shape=[None, self.imageSize, self.imageSize,self.channels], name="input")
         self.output = tf.placeholder(tf.float32, shape=[None, self.numClasses], name="output")
 
-        # Todo 2 specify the model
         inputImage = tf.reshape(self.input, shape=[-1, self.imageSize, self.imageSize, self.channels])
 
         conv1 = tf.layers.conv2d(inputImage, 32, kernel_size=[5, 5], strides=(2, 2), padding="SAME")
