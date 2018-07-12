@@ -1,4 +1,7 @@
 import json
+import os
+from collections import deque
+import matplotlib.pyplot as plt
 
 
 def makeLabelsDict(labels):
@@ -10,6 +13,13 @@ def makeLabelsDict(labels):
     return labelsDict
 
 
+def makeQueue(dir):
+    Q=deque()
+    for file in os.listdir(dir):
+        Q.append(os.path.join(dir,file))
+    return Q
+
+
 class Dataset():
 
     def __init__(self, configLocation):
@@ -18,6 +28,10 @@ class Dataset():
             self.config = json.load(file)
 
         self.root = self.config["root"]
+        self.trainDataPath = os.path.join(self.root, self.config["train"])
+        self.testDataPath = os.path.join(self.root, self.config["test"])
+        self.trainDataQueue=makeQueue(self.trainDataPath)
+        self.testDataQueue=makeQueue(self.testDataPath)
         self.labels = self.config["labels"]
         self.numLabels = len(self.labels)
         self.labelsDict = makeLabelsDict(self.labels)
@@ -28,12 +42,29 @@ class Dataset():
         y_oneHot[self.labelsDict[y]] = 1
         return y_oneHot
 
-    def processImage(self, image):
+    def processImage(self, image): #Todo Do the reshpaing of data to fix the size
         return image
 
-    def makeData(self):
-        image, output = None, None  # Todo 1 get the data
-        image = self.processImage(self, image)
+    def getLabel(self,path):
+        file=path.rsplit("/")[-1]
+        label=file.split(".",1)[0]
+        return label
+
+    def getData(self,path):
+        image=plt.imread(path)
+        label=self.getLabel(path)
+        return image,label
+
+
+    def makeData(self,train=True):
+        if(train):
+            path=self.trainDataQueue.popleft()
+        else:
+            path=self.testDataQueue.popleft()
+
+        image, output = self.getData(path)
+
+        image = self.processImage(image)
         output = self.oneHot(output)
         return image, output
 
@@ -46,7 +77,7 @@ class Dataset():
         return batch
 
     def getClass(self, oneHotClass):
-        state = oneHotClass.index(max(oneHotClass)) + 1 # it return the index of the element that has max value
+        state = oneHotClass.index(max(oneHotClass)) # it return the index of the element that has max value
         for key in self.labelsDict:
             value = self.labelsDict[key]
             if value == state:
