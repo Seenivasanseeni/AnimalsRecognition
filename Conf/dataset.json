@@ -4,5 +4,9 @@
   "test":"test",
   "labels":["cat","dog"],
   "imageSize":250,
-  "channels":3
+  "channels":3,
+  "model":{
+    "learningRate":0.5,
+    "dropout":0.7
+  }
 }

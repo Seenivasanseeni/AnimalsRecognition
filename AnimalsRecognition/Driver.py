@@ -1,11 +1,12 @@
+
 from . import Model,Dataset
-import matplotlib.pyplot as plt
+
 
 def train(Mod,Ds):
 
     num=1000
     for i in range(num):
-        batch=Ds.makeBatchData(100)
+        batch=Ds.makeBatchData(50)
         acc,lo=Mod.train(batch["images"],batch["outputs"])
         print("TimeStep %d accuracy %f Loss %f" %(i,acc,lo))
     return
@@ -20,9 +21,6 @@ def main():
     Ds=Dataset.Dataset(configLocation="Conf/dataset.json")
     train(Mod,Ds)
     return
-
-
-
 
 
 
