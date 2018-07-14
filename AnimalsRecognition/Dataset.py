@@ -86,12 +86,20 @@ class Dataset():
         output = self.oneHot(output)
         return image, output
 
-    def makeBatchData(self, batchSize=100):
+    def makeBatchData(self, train=True ,batchSize=100):
         batch = {"images": [], "outputs": []}
+        if(not train):
+            batch={"images":[]}
+
         for _ in range(batchSize):
-            image, output = self.makeData()
-            batch["images"].append(image)
-            batch["outputs"].append(output)
+            if(train):
+                image, output = self.makeData()
+                batch["images"].append(image)
+                batch["outputs"].append(output)
+            else:
+                image=self.makeData(train=False)
+                batch["images"].append(image)
+
         return batch
 
     def getClass(self, oneHotClass):

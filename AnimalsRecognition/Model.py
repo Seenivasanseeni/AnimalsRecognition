@@ -32,6 +32,7 @@ class Model():
         self.logits = tf.nn.softmax(dense)
 
         self.loss = tf.losses.softmax_cross_entropy(logits=self.logits, onehot_labels=self.output)
+
         self.accuracy = tf.reduce_mean(
             tf.cast(
                 tf.equal(tf.arg_max(self.logits, 1), tf.arg_max(self.output, 1))
@@ -70,4 +71,4 @@ class Model():
         labels = self.sess.run([self.logits], feed_dict={
             self.input: images
         })
-        return labels;
+        return labels

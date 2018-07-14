@@ -2,9 +2,8 @@
 from . import Model,Dataset
 
 
-def train(Mod,Ds):
+def train(Mod,Ds,num=10):
 
-    num=1000
     for i in range(num):
         batch=Ds.makeBatchData(50)
         acc,lo=Mod.train(batch["images"],batch["outputs"])
