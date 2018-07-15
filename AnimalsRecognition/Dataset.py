@@ -2,8 +2,9 @@ import json
 import os
 from collections import deque
 import matplotlib.pyplot as plt
-from skimage.transform import  resize
+from skimage.transform import resize
 import random
+
 
 def makeLabelsDict(labels):
     labelsDict = {}
@@ -15,14 +16,15 @@ def makeLabelsDict(labels):
 
 
 def makeQueue(dir):
-    Q=deque()
+    Q = deque()
     for file in os.listdir(dir):
-        Q.append(os.path.join(dir,file))
+        Q.append(os.path.join(dir, file))
     return Q
 
+
 def randomDataPath(Q):
-    index=random.randrange(0,len(Q))
-    path=Q[index]
+    index = random.randrange(0, len(Q))
+    path = Q[index]
     Q.remove(path)
     return path
 
@@ -37,15 +39,15 @@ class Dataset():
         self.root = self.config["root"]
         self.trainDataPath = os.path.join(self.root, self.config["train"])
         self.testDataPath = os.path.join(self.root, self.config["test"])
-        self.trainDataQueue=makeQueue(self.trainDataPath)
-        self.testDataQueue=makeQueue(self.testDataPath)
+        self.trainDataQueue = makeQueue(self.trainDataPath)
+        self.testDataQueue = makeQueue(self.testDataPath)
         self.labels = self.config["labels"]
         self.numLabels = len(self.labels)
         self.labelsDict = makeLabelsDict(self.labels)
 
-        #images regarding
-        self.imageSize=self.config["imageSize"]
-        self.channels=self.config["channels"]
+        # images regarding
+        self.imageSize = self.config["imageSize"]
+        self.channels = self.config["channels"]
 
         return
 
@@ -55,27 +57,27 @@ class Dataset():
         return y_oneHot
 
     def processImage(self, image):
-        image=resize(image,output_shape=[self.imageSize,self.imageSize,self.channels])
+        image = resize(image, output_shape=[self.imageSize, self.imageSize, self.channels])
         return image
 
-    def getLabel(self,path):
-        file=path.rsplit("/")[-1]
-        label=file.split(".",1)[0]
+    def getLabel(self, path):
+        file = path.rsplit("/")[-1]
+        label = file.split(".", 1)[0]
         return label
 
-    def getData(self,path,train=True):
-        image=plt.imread(path)
-        if(not train):
+    def getData(self, path, train=True):
+        image = plt.imread(path)
+        if (not train):
             return image
 
-        label=self.getLabel(path)
-        return image,label
+        label = self.getLabel(path)
+        return image, label
 
-
-    def makeData(self,train=True):
-        if(not train): #make test Data
-            path=randomDataPath(self.testDataQueue)
-            image=self.getData(path,train)
+    def makeData(self, train=True):
+        if (not train):  # make test Data
+            path = randomDataPath(self.testDataQueue)
+            image = self.getData(path, train)
+            image = self.processImage(image)
             return image
 
         path = randomDataPath(self.trainDataQueue)
@@ -86,24 +88,24 @@ class Dataset():
         output = self.oneHot(output)
         return image, output
 
-    def makeBatchData(self, train=True ,batchSize=100):
+    def makeBatchData(self, train=True, batchSize=100):
         batch = {"images": [], "outputs": []}
-        if(not train):
-            batch={"images":[]}
+        if (not train):
+            batch = {"images": []}
 
         for _ in range(batchSize):
-            if(train):
+            if (train):
                 image, output = self.makeData()
                 batch["images"].append(image)
                 batch["outputs"].append(output)
             else:
-                image=self.makeData(train=False)
+                image = self.makeData(train=False)
                 batch["images"].append(image)
 
         return batch
 
     def getClass(self, oneHotClass):
-        state = oneHotClass.index(max(oneHotClass)) # it return the index of the element that has max value
+        state = oneHotClass.index(max(oneHotClass))  # it return the index of the element that has max value
         for key in self.labelsDict:
             value = self.labelsDict[key]
             if value == state:

@@ -20,12 +20,12 @@ class Model():
 
         inputImage = tf.reshape(self.input, shape=[-1, self.imageSize, self.imageSize, self.channels])
 
-        conv1 = tf.layers.conv2d(inputImage, 1, kernel_size=[20,20], strides=(2,2), padding="SAME")
-        pool1 = tf.layers.average_pooling2d(conv1, pool_size=[2,2], strides=[2, 2])
+        conv1 = tf.layers.conv2d(inputImage, 8, kernel_size=[5, 5], strides=(2, 2), padding="SAME")
+        self.pool1 = tf.layers.average_pooling2d(conv1, pool_size=[2, 2], strides=[2, 2])
 
-        flat = tf.layers.flatten(pool1)
+        flat = tf.layers.flatten(self.pool1)
 
-        dropout=tf.layers.dropout(flat,self.config["model"]["dropout"])
+        dropout = tf.layers.dropout(flat, self.config["model"]["dropout"])
 
         dense = tf.layers.dense(dropout, units=self.numClasses)
 
@@ -40,7 +40,7 @@ class Model():
             )
         )
 
-        self.learningRate=self.config["model"]["learningRate"]
+        self.learningRate = self.config["model"]["learningRate"]
 
         self.optimizer = tf.train.GradientDescentOptimizer(self.learningRate).minimize(self.loss)
 
@@ -72,3 +72,9 @@ class Model():
             self.input: images
         })
         return labels
+
+    def visualize(self, images):
+        layer = self.sess.run([self.pool1], feed_dict={
+            self.input: images
+        })
+        return layer

@@ -10,15 +10,17 @@ def train(Mod,Ds,num=10):
         print("TimeStep %d accuracy %f Loss %f" %(i,acc,lo))
     return
 
-
-
+def visulaize(Mod,Ds):
+    batch=Ds.makeBatchData(batchSize=1,train=False)
+    units=Mod.visualize(batch["images"])
+    return
 
 def main():
     Mod=Model.Model()
     Mod.createCompGraph()
     Mod.intializeModel()
     Ds=Dataset.Dataset(configLocation="Conf/dataset.json")
-    train(Mod,Ds)
+    train(Mod,Ds,num=10)
     return
 
 
