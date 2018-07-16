@@ -6,7 +6,7 @@
   "imageSize":250,
   "channels":3,
   "model":{
-    "learningRate":0.5,
+    "learningRate":0.003,
     "dropout":0.7
   }
 }
