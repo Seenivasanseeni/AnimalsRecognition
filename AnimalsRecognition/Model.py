@@ -51,19 +51,31 @@ class Model():
 
         self.optimizer = tf.train.GradientDescentOptimizer(self.learningRate).minimize(self.loss)
 
+        #summary items
+        tf.summary.histogram("conv1", conv1)
+        tf.summary.histogram("pool1", pool1)
+        tf.summary.histogram("conv2", conv2)
+        tf.summary.histogram("pool2", pool2)
+        tf.summary.histogram("conv3", conv3)
+        tf.summary.histogram("pool3", pool3)
+
         return
 
     def intializeModel(self):
         self.sess = tf.InteractiveSession()
         tf.initialize_all_variables().run()
+        self.trainWriter=tf.summary.FileWriter("./logs/1/train",self.sess.graph)
+        self.trainCount=0
         return
 
     def train(self, images, output):
-        _, acc, lo = self.sess.run([self.optimizer, self.accuracy, self.loss], feed_dict={
+        merge=tf.summary.merge_all()
+        summary,_, acc, lo = self.sess.run([merge,self.optimizer, self.accuracy, self.loss], feed_dict={
             self.input: images,
             self.output: output
         })
-
+        self.trainWriter.add_summary(summary,self.trainCount)
+        self.trainCount+=1
         return acc, lo
 
     def test(self, images, output):
