@@ -23,13 +23,17 @@ class Model():
         conv1 = tf.layers.conv2d(inputImage, 32, kernel_size=[5, 5], strides=(2, 2), activation=tf.nn.relu)
         pool1 = tf.layers.max_pooling2d(conv1, pool_size=[2, 2], strides=[2, 2])
 
-        conv1.tf
 
-        conv2=tf.layers.conv2d(pool1,64,kernel_size=[5,5],strides=[2,2],activation=tf.nn.relu)
+        conv2 = tf.layers.conv2d(pool1, 64, 5, activation=tf.nn.relu, padding="SAME")
+        pool2 = tf.layers.max_pooling2d(conv2, [2, 2], strides=2)
 
-        self.visualizeMark=conv2
+        conv3 = tf.layers.conv2d(pool2, 128, 5, strides=2, activation=tf.nn.relu)
+        pool3 = tf.layers.max_pooling2d(conv3, pool_size=[2, 2], strides=[2, 2])
 
-        flat = tf.layers.flatten(conv2)
+
+        self.visualizeMark=pool3
+
+        flat = tf.layers.flatten(pool3)
 
         dropout = tf.layers.dropout(flat, self.config["model"]["dropout"])
 
