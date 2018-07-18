@@ -20,21 +20,22 @@ class Model():
 
         inputImage = tf.reshape(self.input, shape=[-1, self.imageSize, self.imageSize, self.channels])
 
-        conv1 = tf.layers.conv2d(inputImage, 8, kernel_size=[5, 5], strides=(2, 2), padding="SAME",activation=tf.nn.relu)
+        conv1 = tf.layers.conv2d(inputImage, 32, kernel_size=[5, 5], strides=(2, 2), activation=tf.nn.relu)
         pool1 = tf.layers.max_pooling2d(conv1, pool_size=[2, 2], strides=[2, 2])
 
-        conv2=tf.layers.conv2d(pool1,64,5,activation=tf.nn.relu,padding="SAME")
-        pool2=tf.layers.max_pooling2d(conv2,[2,2],strides=2)
+        conv1.tf
 
-        conv3=tf.layers.conv2d(pool2,128,5,strides=2,activation=tf.nn.relu)
-        pool3=tf.layers.max_pooling2d(conv3,pool_size=[2,2],strides=[2,2])
+        conv2=tf.layers.conv2d(pool1,64,kernel_size=[5,5],strides=[2,2],activation=tf.nn.relu)
 
+        self.visualizeMark=conv2
 
-        flat = tf.layers.flatten(pool3)
+        flat = tf.layers.flatten(conv2)
 
         dropout = tf.layers.dropout(flat, self.config["model"]["dropout"])
 
-        dense = tf.layers.dense(dropout, units=self.numClasses)
+        dense1 = tf.layers.dense(dropout, units=self.numClasses * 2)
+
+        dense = tf.layers.dense(dense1, units=self.numClasses)
 
         self.logits = tf.nn.softmax(dense)
 
@@ -54,10 +55,8 @@ class Model():
         #summary items
         tf.summary.histogram("conv1", conv1)
         tf.summary.histogram("pool1", pool1)
-        tf.summary.histogram("conv2", conv2)
-        tf.summary.histogram("pool2", pool2)
-        tf.summary.histogram("conv3", conv3)
-        tf.summary.histogram("pool3", pool3)
+        tf.summary.histogram("loss", self.loss)
+        tf.summary.histogram("accuracy", self.accuracy)
 
         return
 
@@ -93,7 +92,7 @@ class Model():
         return labels
 
     def visualize(self, images):
-        layer = self.sess.run([self.pool1], feed_dict={
+        layer = self.sess.run([self.visualizeMark], feed_dict={
             self.input: images
         })
         return layer

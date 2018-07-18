@@ -1,6 +1,9 @@
 
 from . import Model,Dataset
 
+import numpy as np
+
+import matplotlib.pyplot as plt
 
 def train(Mod,Ds,num=10):
 
@@ -10,9 +13,10 @@ def train(Mod,Ds,num=10):
         print("TimeStep %d accuracy %f Loss %f" %(i,acc,lo))
     return
 
-def visulaize(Mod,Ds):
+def visualize(Mod,Ds):
     batch=Ds.makeBatchData(batchSize=1,train=False)
     units=Mod.visualize(batch["images"])
+    print(np.shape(units))
     return
 
 def main():
@@ -20,7 +24,8 @@ def main():
     Mod.createCompGraph()
     Mod.intializeModel()
     Ds=Dataset.Dataset(configLocation="Conf/dataset.json")
-    train(Mod,Ds,num=10)
+    train(Mod,Ds,num=500)
+    visualize(Mod,Ds)
     return
 
 
