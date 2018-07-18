@@ -112,3 +112,7 @@ class Dataset():
             if value == state:
                 return key
         raise Exception("Invalid Output One Hot Vector")
+
+
+
+#todo how to download and exxtract data in cloud
