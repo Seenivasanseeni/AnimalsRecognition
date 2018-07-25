@@ -4,7 +4,7 @@ from collections import deque
 import matplotlib.pyplot as plt
 from skimage.transform import resize
 import random
-
+import  numpy as np
 
 def makeLabelsDict(labels):
     labelsDict = {}
@@ -26,7 +26,6 @@ def randomDataPath(Q):
     index = random.randrange(0, len(Q))
     path = Q[index]
     Q.remove(path)
-    Q.append(path)
     return path
 
 

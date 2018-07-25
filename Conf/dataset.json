@@ -3,10 +3,10 @@
   "train":"train",
   "test":"test",
   "labels":["cat","dog"],
-  "imageSize":250,
-  "channels":3,
+  "imageSize":20,
+  "channels":1,
   "model":{
     "learningRate":0.003,
-    "dropout":0.7
+    "dropout":0.8
   }
 }

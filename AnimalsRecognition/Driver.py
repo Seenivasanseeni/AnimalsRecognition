@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 def train(Mod,Ds,num=10):
 
     for i in range(num):
-        batch=Ds.makeBatchData(50)
+        batch=Ds.makeBatchData(100)
         acc,lo=Mod.train(batch["images"],batch["outputs"])
         print("TimeStep %d accuracy %f Loss %f" %(i,acc,lo))
     return
@@ -16,7 +16,7 @@ def train(Mod,Ds,num=10):
 def visualize(Mod,Ds):
     batch=Ds.makeBatchData(batchSize=1,train=False)
     units=Mod.visualize(batch["images"])
-    print(np.shape(units))
+    print("Shape is ",np.shape(units))
     return
 
 def main():
@@ -24,7 +24,7 @@ def main():
     Mod.createCompGraph()
     Mod.intializeModel()
     Ds=Dataset.Dataset(configLocation="Conf/dataset.json")
-    train(Mod,Ds,num=500)
+    train(Mod,Ds,num=20)
     visualize(Mod,Ds)
     return
 
