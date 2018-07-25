@@ -20,29 +20,15 @@ class Model():
 
         inputImage = tf.reshape(self.input, shape=[-1, self.imageSize, self.imageSize, self.channels])
 
-        conv1 = tf.layers.conv2d(inputImage, 32, kernel_size=5, activation=tf.nn.relu)
+        flat=tf.layers.flatten(inputImage)
 
-        pool1 = tf.layers.max_pooling2d(conv1, pool_size=5,strides=2)
-
-        conv2 = tf.layers.conv2d(pool1, 64, kernel_size=5, activation=tf.nn.relu)
-
-        pool2 = tf.layers.max_pooling2d(conv2, pool_size=5,strides=2    )
-
-        self.visualizeMark = pool2
-
-        flat = tf.layers.flatten(pool2)
-
-        dense1=tf.layers.dense(flat,units=1024)
-
-        dropout = tf.layers.dropout(dense1, self.config["model"]["dropout"])
-
-        dense = tf.layers.dense(dropout, units=self.numClasses)
+        dense=tf.layers.dense(flat,units=self.numClasses,activation=tf.nn.relu)
 
         self.logits = tf.nn.softmax(dense)
 
         self.loss = tf.losses.softmax_cross_entropy(logits=self.logits, onehot_labels=self.output)
 
-        self.loss=tf.losses.log_loss(self.output,self.logits)
+        self.loss=tf.losses.sigmoid_cross_entropy(self.output,self.logits)
 
 
         self.accuracy = tf.reduce_mean(
@@ -94,6 +80,7 @@ class Model():
         return labels
 
     def visualize(self, images):
+        return 
         layer = self.sess.run([self.visualizeMark], feed_dict={
             self.input: images
         })
