@@ -1,50 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b08321e3-56cf-4390-a5e8-9affaba1af99" name="Default" comment="job add">
-      <change afterPath="$PROJECT_DIR$/AnimalsRecognition/Research.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AnimalsRecognition/tools.py" afterDir="false" />
+    <list default="true" id="b08321e3-56cf-4390-a5e8-9affaba1af99" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnimalsRecognition/Dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/AnimalsRecognition/Dataset.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AnimalsRecognition/Driver.py" beforeDir="false" afterPath="$PROJECT_DIR$/AnimalsRecognition/Driver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnimalsRecognition/Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/AnimalsRecognition/Model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnimalsRecognition/Tests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/AnimalsRecognition/Tests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Conf/dataset.json" beforeDir="false" afterPath="$PROJECT_DIR$/Conf/dataset.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531840742.SenBook" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531841204.SenBook" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531841315.SenBook" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531841492.SenBook" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531841874.SenBook" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531841971.SenBook" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531842314.SenBook" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531842425.SenBook" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531842886.SenBook" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531880833.SenBook" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531912725.SenBook" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531913141.SenBook" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531913672.SenBook" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531913865.SenBook" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531914052.SenBook" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531914123.SenBook" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531914325.SenBook" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531914899.SenBook" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531915043.SenBook" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531915202.SenBook" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531915544.SenBook" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531915616.SenBook" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531915713.SenBook" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531915797.SenBook" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531915948.SenBook" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531916073.SenBook" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531916246.SenBook" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531916334.SenBook" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531916474.SenBook" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531916569.SenBook" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531916660.SenBook" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531916935.SenBook" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531923837.SenBook" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1532526642.SenBook" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1532530761.SenBook" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnimalsRecognition/Research.txt" beforeDir="false" afterPath="$PROJECT_DIR$/AnimalsRecognition/Research.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1532526767.SenBook" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -66,6 +27,15 @@
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Research.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AnimalsRecognition/Research.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="1" column="83" selection-start-line="1" selection-start-column="83" selection-end-line="1" selection-end-column="83" />
             </state>
           </provider>
         </entry>
@@ -139,20 +109,11 @@
       <file leaf-file-name="Driver.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AnimalsRecognition/Driver.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="285">
+              <caret line="30" column="49" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
               <folding>
                 <element signature="e#1#28#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Research.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/AnimalsRecognition/Research.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="85" selection-start-column="85" selection-end-column="85" />
             </state>
           </provider>
         </entry>
@@ -509,7 +470,14 @@
       <option name="project" value="LOCAL" />
       <updated>1531884836436</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Research on Not learning">
+      <created>1532531349443</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1532531349443</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TodoView">
@@ -525,14 +493,14 @@
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49917898" visible="true" weight="0.1317945" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49917898" visible="true" weight="0.1317945" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32784185" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50605655" side_tool="true" weight="0.32676518" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3234811" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32676518" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49394348" weight="0.32512316" />
       <window_info id="Structure" order="1" sideWeight="0.500821" side_tool="true" weight="0.3230148" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4996277" visible="true" weight="0.3908046" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4996277" visible="true" weight="0.3908046" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.3298585" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39737275" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -624,7 +592,8 @@
     <MESSAGE value="3 layered model ready to deploy" />
     <MESSAGE value="partial ready for deploy" />
     <MESSAGE value="job add" />
-    <option name="LAST_COMMIT_MESSAGE" value="job add" />
+    <MESSAGE value="Research on Not learning" />
+    <option name="LAST_COMMIT_MESSAGE" value="Research on Not learning" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -928,16 +897,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AnimalsRecognition/Dataset.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="90" column="42" selection-start-line="90" selection-start-column="42" selection-end-line="90" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AnimalsRecognition/Model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
@@ -978,18 +937,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AnimalsRecognition/Driver.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="285">
+          <caret line="30" column="49" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
           <folding>
             <element signature="e#1#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/AnimalsRecognition/Dataset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="90" column="42" selection-start-line="90" selection-start-column="42" selection-end-line="90" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/AnimalsRecognition/Research.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="85" selection-start-column="85" selection-end-column="85" />
+        <state relative-caret-position="18">
+          <caret line="1" column="83" selection-start-line="1" selection-start-column="83" selection-end-line="1" selection-end-column="83" />
         </state>
       </provider>
     </entry>

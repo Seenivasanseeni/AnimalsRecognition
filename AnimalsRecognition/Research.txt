@@ -1,1 +1,2 @@
 After modifing optimizer and learning rate there is a change in the accuracy and loss
+model has shown improvement. CONCLUSION => large epochs will converge on the result

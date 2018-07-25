@@ -17,17 +17,18 @@ def modTrain(Mod,Ds,num=10):
     batch=Ds.makeBatchData(1000)
     import  numpy as np
     print(np.shape(batch["images"]))
-    print("TRAIN")
-    for i in range(10):
+    for _ in range (num):
+        print("TRAIN")
+        for i in range(10):
 
-        acc, lo = Mod.train(batch["images"][i * 100:(i + 1) * 100], batch["outputs"][i * 100:(i + 1) * 100])
-        print("Timestep %d accuracy %f loss %f " %(i, acc, lo))
+            acc, lo = Mod.train(batch["images"][i * 100:(i + 1) * 100], batch["outputs"][i * 100:(i + 1) * 100])
+            print("Timestep %d accuracy %f loss %f " %(i, acc, lo))
 
 
     print("SEEN DATA")
     for i in range(10):
         acc, lo = Mod.train(batch["images"][i * 100:(i + 1) * 100], batch["outputs"][i * 100:(i + 1) * 100])
-        print("Timestep %d accuracy %f loss %f ".format(i, acc, lo))
+        print("Timestep %d accuracy %f loss %f "%(i, acc, lo))
 
     return
 
