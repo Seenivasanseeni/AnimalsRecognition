@@ -1,6 +1,6 @@
 import tensorflow as tf
 import json
-
+from .tools import *
 
 class Model():
 
@@ -22,13 +22,12 @@ class Model():
 
         flat=tf.layers.flatten(inputImage)
 
-        dense=tf.layers.dense(flat,units=self.numClasses,activation=tf.nn.relu)
+        self.dense=tf.layers.dense(flat,units=self.numClasses,activation=tf.nn.relu)
 
-        self.logits = tf.nn.softmax(dense)
+        self.logits = tf.nn.softmax(self.dense)
 
         self.loss = tf.losses.softmax_cross_entropy(logits=self.logits, onehot_labels=self.output)
 
-        self.loss=tf.losses.sigmoid_cross_entropy(self.output,self.logits)
 
 
         self.accuracy = tf.reduce_mean(
@@ -40,17 +39,18 @@ class Model():
 
         self.learningRate = self.config["model"]["learningRate"]
 
-        self.optimizer = tf.train.AdamOptimizer(self.learningRate).minimize(self.loss)
+        self.optimizer = tf.train.GradientDescentOptimizer(self.learningRate).minimize(self.loss)
 
         # summary items
         tf.summary.histogram("loss", self.loss)
         tf.summary.histogram("accuracy", self.accuracy)
-
+        tf.summary.histogram("dense",self.dense)
         return
 
     def intializeModel(self):
         self.sess = tf.InteractiveSession()
         tf.initialize_all_variables().run()
+        makeLogDir()
         self.trainWriter = tf.summary.FileWriter("./logs/1/train", self.sess.graph)
         self.trainCount = 0
         return
@@ -64,6 +64,7 @@ class Model():
         self.trainWriter.add_summary(summary, self.trainCount)
         self.trainCount += 1
         return acc, lo
+
 
     def test(self, images, output):
         acc, lo = self.sess.run([self.accuracy, self.loss], feed_dict={

@@ -1,8 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b08321e3-56cf-4390-a5e8-9affaba1af99" name="Default" comment="">
+    <list default="true" id="b08321e3-56cf-4390-a5e8-9affaba1af99" name="Default" comment="job add">
+      <change afterPath="$PROJECT_DIR$/AnimalsRecognition/Research.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AnimalsRecognition/tools.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnimalsRecognition/Dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/AnimalsRecognition/Dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnimalsRecognition/Driver.py" beforeDir="false" afterPath="$PROJECT_DIR$/AnimalsRecognition/Driver.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AnimalsRecognition/Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/AnimalsRecognition/Model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnimalsRecognition/Tests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/AnimalsRecognition/Tests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Conf/dataset.json" beforeDir="false" afterPath="$PROJECT_DIR$/Conf/dataset.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531840742.SenBook" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531841204.SenBook" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531841315.SenBook" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531841492.SenBook" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531841874.SenBook" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531841971.SenBook" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531842314.SenBook" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531842425.SenBook" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531842886.SenBook" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531880833.SenBook" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531912725.SenBook" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531913141.SenBook" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531913672.SenBook" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531913865.SenBook" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531914052.SenBook" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531914123.SenBook" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531914325.SenBook" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531914899.SenBook" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531915043.SenBook" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531915202.SenBook" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531915544.SenBook" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531915616.SenBook" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531915713.SenBook" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531915797.SenBook" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531915948.SenBook" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531916073.SenBook" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531916246.SenBook" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531916334.SenBook" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531916474.SenBook" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531916569.SenBook" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531916660.SenBook" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531916935.SenBook" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1531923837.SenBook" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1532526642.SenBook" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1532530761.SenBook" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,8 +61,8 @@
       <file leaf-file-name="Dataset.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AnimalsRecognition/Dataset.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+            <state relative-caret-position="33">
+              <caret line="90" column="42" selection-start-line="90" selection-start-column="42" selection-end-line="90" selection-end-column="42" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -28,14 +70,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Model.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Model.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AnimalsRecognition/Model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="82" column="15" selection-start-line="82" selection-start-column="15" selection-end-line="82" selection-end-column="15" />
+            <state relative-caret-position="261">
+              <caret line="41" column="58" selection-start-line="41" selection-start-column="58" selection-end-line="41" selection-end-column="58" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tests.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AnimalsRecognition/Tests.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" column="60" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tools.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AnimalsRecognition/tools.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -61,8 +121,8 @@
       <file leaf-file-name="dataset.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Conf/dataset.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+            <state relative-caret-position="144">
+              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -79,11 +139,20 @@
       <file leaf-file-name="Driver.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AnimalsRecognition/Driver.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="198">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="e#1#28#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Research.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AnimalsRecognition/Research.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="85" selection-start-column="85" selection-end-column="85" />
             </state>
           </provider>
         </entry>
@@ -100,6 +169,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>cha</find>
+      <find>wr</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -113,21 +183,23 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/AnimalsRecognition/Tests.txt" />
         <option value="$PROJECT_DIR$/AnimalsRecognition/run.py" />
         <option value="$PROJECT_DIR$/run.py" />
         <option value="$PROJECT_DIR$/AnimalsRecognition/Test/TestDataset.py" />
         <option value="$PROJECT_DIR$/runTest.py" />
         <option value="$PROJECT_DIR$/init.sh" />
         <option value="$PROJECT_DIR$/job1.sh" />
-        <option value="$PROJECT_DIR$/AnimalsRecognition/Driver.py" />
+        <option value="$PROJECT_DIR$/AnimalsRecognition/tools.py" />
         <option value="$PROJECT_DIR$/AnimalsRecognition/Dataset.py" />
-        <option value="$PROJECT_DIR$/Conf/dataset.json" />
+        <option value="$PROJECT_DIR$/AnimalsRecognition/Tests.txt" />
         <option value="$PROJECT_DIR$/AnimalsRecognition/Model.py" />
+        <option value="$PROJECT_DIR$/Conf/dataset.json" />
+        <option value="$PROJECT_DIR$/AnimalsRecognition/Driver.py" />
+        <option value="$PROJECT_DIR$/AnimalsRecognition/Research.txt" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="606" />
     <option name="y" value="27" />
     <option name="width" value="760" />
@@ -450,17 +522,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="606" y="27" width="760" height="739" extended-state="0" />
+    <frame x="0" y="27" width="1366" height="741" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49917898" visible="true" weight="0.24016282" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49917898" visible="true" weight="0.1317945" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32784185" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50605655" side_tool="true" weight="0.32676518" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3234811" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32676518" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49394348" visible="true" weight="0.3261944" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49394348" weight="0.32512316" />
       <window_info id="Structure" order="1" sideWeight="0.500821" side_tool="true" weight="0.3230148" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4996277" weight="0.39044482" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4996277" visible="true" weight="0.3908046" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.3298585" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39737275" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -474,21 +546,21 @@
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49917898" visible="true" weight="0.3007576" />
       <window_info id="Structure" order="1" sideWeight="0.500821" side_tool="true" weight="0.3230148" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32784185" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3261944" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32676518" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Python Console" order="8" weight="0.32784185" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39737275" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4996277" visible="true" weight="0.3825944" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003723" side_tool="true" weight="0.3825944" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3261944" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.3298585" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Python Console" order="8" weight="0.32784185" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -567,20 +639,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/runTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Conf/dataset.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -827,13 +885,6 @@
     <entry file="file://$PROJECT_DIR$/AnimalsRecognition/Test/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/AnimalsRecognition/Tests.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AnimalsRecognition/Test/TestDataset.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -849,13 +900,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/job1.sh" />
-    <entry file="file://$PROJECT_DIR$/Jobs/job1.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/init.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -870,30 +914,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AnimalsRecognition/Driver.py">
+    <entry file="file://$PROJECT_DIR$/Jobs/job1.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="e#1#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AnimalsRecognition/Dataset.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="18">
+          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -904,20 +928,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Conf/dataset.json">
+    <entry file="file://$PROJECT_DIR$/AnimalsRecognition/Dataset.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+        <state relative-caret-position="33">
+          <caret line="90" column="42" selection-start-line="90" selection-start-column="42" selection-end-line="90" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AnimalsRecognition/Model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="82" column="15" selection-start-line="82" selection-start-column="15" selection-end-line="82" selection-end-column="15" />
+        <state relative-caret-position="261">
+          <caret line="41" column="58" selection-start-line="41" selection-start-column="58" selection-end-line="41" selection-end-column="58" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnimalsRecognition/tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnimalsRecognition/Tests.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="60" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conf/dataset.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnimalsRecognition/Driver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#1#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnimalsRecognition/Research.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="85" selection-start-column="85" selection-end-column="85" />
         </state>
       </provider>
     </entry>

@@ -2,3 +2,5 @@ makeData() Working
 getClass() working
 makeQueue() working
 makeBatchData() Working
+
+on 25/7 model is not improving any see tensorflow loss graph
