@@ -14,7 +14,7 @@ def train(Mod,Ds,num=10):
     return
 
 def modTrain(Mod,Ds,num=10):
-    trainBatch=Ds.makeBatchData(1000,train=True)
+    trainBatch=Ds.makeBatchData(5000,train=True)
     testBatch=Ds.makeBatchData(100,train=False)
 
     for epoch in range(num):

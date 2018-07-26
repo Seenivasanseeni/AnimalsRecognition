@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b08321e3-56cf-4390-a5e8-9affaba1af99" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/AnimalsRecognition/Research.txt" beforeDir="false" afterPath="$PROJECT_DIR$/AnimalsRecognition/Research.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnimalsRecognition/Driver.py" beforeDir="false" afterPath="$PROJECT_DIR$/AnimalsRecognition/Driver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnimalsRecognition/Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/AnimalsRecognition/Model.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,7 +21,7 @@
       <file leaf-file-name="Dataset.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AnimalsRecognition/Dataset.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="982">
+            <state relative-caret-position="3114">
               <caret line="179" column="20" selection-start-line="179" selection-start-column="20" selection-end-line="179" selection-end-column="20" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
@@ -31,8 +33,8 @@
       <file leaf-file-name="Model.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AnimalsRecognition/Model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="58" column="30" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
+            <state relative-caret-position="-93">
+              <caret line="73" column="47" lean-forward="true" selection-start-line="73" selection-start-column="47" selection-end-line="73" selection-end-column="47" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -58,11 +60,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Driver.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Driver.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AnimalsRecognition/Driver.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="189">
+              <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
               <folding>
                 <element signature="e#1#28#0" expanded="true" />
               </folding>
@@ -70,11 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Research.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Research.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AnimalsRecognition/Research.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="90" selection-start-line="3" selection-start-column="90" selection-end-line="3" selection-end-column="90" />
+            <state relative-caret-position="72">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -113,11 +115,11 @@
         <option value="$PROJECT_DIR$/job1.sh" />
         <option value="$PROJECT_DIR$/AnimalsRecognition/tools.py" />
         <option value="$PROJECT_DIR$/AnimalsRecognition/Tests.txt" />
-        <option value="$PROJECT_DIR$/AnimalsRecognition/Model.py" />
-        <option value="$PROJECT_DIR$/AnimalsRecognition/Driver.py" />
         <option value="$PROJECT_DIR$/AnimalsRecognition/Dataset.py" />
         <option value="$PROJECT_DIR$/Conf/dataset.json" />
         <option value="$PROJECT_DIR$/AnimalsRecognition/Research.txt" />
+        <option value="$PROJECT_DIR$/AnimalsRecognition/Model.py" />
+        <option value="$PROJECT_DIR$/AnimalsRecognition/Driver.py" />
       </list>
     </option>
   </component>
@@ -133,6 +135,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -159,7 +162,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -445,7 +447,21 @@
       <option name="project" value="LOCAL" />
       <updated>1532531546528</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="done">
+      <created>1532597784525</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1532597784525</updated>
+    </task>
+    <task id="LOCAL-00025" summary="done">
+      <created>1532597842677</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1532597842677</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TodoView">
@@ -461,52 +477,42 @@
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49917898" visible="true" weight="0.20551005" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49917898" visible="true" weight="0.1317945" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32784185" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50757575" side_tool="true" weight="0.32512316" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3234811" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50605655" side_tool="true" weight="0.32676518" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3234811" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32676518" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49242425" visible="true" weight="0.32512316" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49394348" visible="true" weight="0.32512316" />
       <window_info id="Structure" order="1" sideWeight="0.500821" side_tool="true" weight="0.3230148" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4996277" weight="0.39244664" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4996277" weight="0.39244664" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.3298585" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39737275" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3234811" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49917898" visible="true" weight="0.1317945" />
-      <window_info id="Structure" order="1" sideWeight="0.500821" side_tool="true" weight="0.3230148" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32784185" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49394348" weight="0.32512316" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39737275" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50605655" side_tool="true" weight="0.32676518" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" weight="0.3298585" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4996277" visible="true" weight="0.39244664" />
-      <window_info anchor="bottom" id="Python Console" order="7" weight="0.32676518" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49917898" visible="true" weight="0.3007576" />
       <window_info id="Structure" order="1" sideWeight="0.500821" side_tool="true" weight="0.3230148" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32784185" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3261944" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32676518" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Python Console" order="8" weight="0.32784185" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39737275" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4996277" visible="true" weight="0.3825944" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003723" side_tool="true" weight="0.3825944" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3261944" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.3298585" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Python Console" order="8" weight="0.32784185" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -572,7 +578,8 @@
     <MESSAGE value="job add" />
     <MESSAGE value="Research on Not learning" />
     <MESSAGE value="confirm on way to learn" />
-    <option name="LAST_COMMIT_MESSAGE" value="confirm on way to learn" />
+    <MESSAGE value="done" />
+    <option name="LAST_COMMIT_MESSAGE" value="done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -897,32 +904,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AnimalsRecognition/Model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="58" column="30" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AnimalsRecognition/Dataset.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="982">
+        <state relative-caret-position="3114">
           <caret line="179" column="20" selection-start-line="179" selection-start-column="20" selection-end-line="179" selection-end-column="20" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AnimalsRecognition/Driver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#1#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -936,8 +923,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AnimalsRecognition/Research.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="90" selection-start-line="3" selection-start-column="90" selection-end-line="3" selection-end-column="90" />
+        <state relative-caret-position="72">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnimalsRecognition/Model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-93">
+          <caret line="73" column="47" lean-forward="true" selection-start-line="73" selection-start-column="47" selection-end-line="73" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnimalsRecognition/Driver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+          <folding>
+            <element signature="e#1#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

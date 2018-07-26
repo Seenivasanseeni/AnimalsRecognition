@@ -53,6 +53,9 @@ class Model():
         makeLogDir()
         self.trainWriter = tf.summary.FileWriter("./logs/1/train", self.sess.graph)
         self.trainCount = 0
+        self.testWriter = tf.summary.FileWriter("./logs/1/test", self.sess.graph)
+        self.testCount = 0
+
         return
 
     def train(self, images, output):
@@ -67,11 +70,13 @@ class Model():
 
 
     def test(self, images, output):
-        acc, lo = self.sess.run([self.accuracy, self.loss], feed_dict={
+        merge=tf.summary.merge_all()
+        summary,acc, lo = self.sess.run([merge,self.accuracy, self.loss], feed_dict={
             self.input: images,
             self.output: output
         })
-
+        self.testWriter.add_summary(summary,self.testCount)
+        self.testCount+=1
         return acc, lo
 
     def predict(self, images):
@@ -81,7 +86,6 @@ class Model():
         return labels
 
     def visualize(self, images):
-        return 
         layer = self.sess.run([self.visualizeMark], feed_dict={
             self.input: images
         })
