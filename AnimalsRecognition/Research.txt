@@ -1,3 +1,4 @@
 After modifing optimizer and learning rate there is a change in the accuracy and loss
 model has shown improvement. CONCLUSION => large epochs will converge on the result
 Done train data has been fit into 80% accuracy of 1000 images. train policy is now quite working but testing accuracy is not being improved
+  loss oscillation POSSIBLE INFERENCE => Needed learning rate to be adjusted automatically
