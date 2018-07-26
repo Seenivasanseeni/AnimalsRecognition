@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b08321e3-56cf-4390-a5e8-9affaba1af99" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/AnimalsRecognition/Dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/AnimalsRecognition/Dataset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnimalsRecognition/Driver.py" beforeDir="false" afterPath="$PROJECT_DIR$/AnimalsRecognition/Driver.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Conf/dataset.json" beforeDir="false" afterPath="$PROJECT_DIR$/Conf/dataset.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1532531437.SenBook" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1532576299.SenBook" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/1/train/events.out.tfevents.1532576333.SenBook" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Dataset.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Dataset.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AnimalsRecognition/Dataset.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="182" column="24" lean-forward="true" selection-start-line="182" selection-start-column="24" selection-end-line="182" selection-end-column="24" />
+            <state relative-caret-position="159">
+              <caret line="177" column="35" lean-forward="true" selection-start-line="177" selection-start-column="35" selection-end-line="177" selection-end-column="35" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -54,11 +49,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dataset.json" pinned="false" current-in-tab="false">
+      <file leaf-file-name="dataset.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Conf/dataset.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+            <state relative-caret-position="36">
+              <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Driver.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AnimalsRecognition/Driver.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="141">
+              <caret line="51" column="24" lean-forward="true" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
+              <folding>
+                <element signature="e#1#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -100,8 +107,8 @@
         <option value="$PROJECT_DIR$/AnimalsRecognition/Model.py" />
         <option value="$PROJECT_DIR$/AnimalsRecognition/Research.txt" />
         <option value="$PROJECT_DIR$/AnimalsRecognition/Driver.py" />
-        <option value="$PROJECT_DIR$/Conf/dataset.json" />
         <option value="$PROJECT_DIR$/AnimalsRecognition/Dataset.py" />
+        <option value="$PROJECT_DIR$/Conf/dataset.json" />
       </list>
     </option>
   </component>
@@ -445,14 +452,14 @@
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49917898" visible="true" weight="0.1317945" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49917898" visible="true" weight="0.1317945" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32784185" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50605655" side_tool="true" weight="0.32676518" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3234811" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32676518" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49394348" weight="0.32512316" />
       <window_info id="Structure" order="1" sideWeight="0.500821" side_tool="true" weight="0.3230148" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4996277" visible="true" weight="0.39244664" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4996277" visible="true" weight="0.39244664" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.3298585" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39737275" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -871,16 +878,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AnimalsRecognition/Driver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="52" column="31" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
-          <folding>
-            <element signature="e#1#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Jobs/job1.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
@@ -898,20 +895,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Conf/dataset.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AnimalsRecognition/Dataset.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="182" column="24" lean-forward="true" selection-start-line="182" selection-start-column="24" selection-end-line="182" selection-end-column="24" />
+        <state relative-caret-position="159">
+          <caret line="177" column="35" lean-forward="true" selection-start-line="177" selection-start-column="35" selection-end-line="177" selection-end-column="35" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnimalsRecognition/Driver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="51" column="24" lean-forward="true" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
+          <folding>
+            <element signature="e#1#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conf/dataset.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
         </state>
       </provider>
     </entry>

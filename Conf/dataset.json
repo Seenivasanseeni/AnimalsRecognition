@@ -1,8 +1,5 @@
 {
   "root": "Dataset/PetImages",
-  "train":"train",
-  "test":"test",
-  "labels":["cat","dog"],
   "imageSize":100,
   "channels":1,
   "model":{
