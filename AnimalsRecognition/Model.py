@@ -8,7 +8,7 @@ class Model():
         with open("Conf/dataset.json") as file:
             self.config = json.load(file)
             self.imageSize = self.config["imageSize"]
-            self.numClasses = len(self.config["labels"])
+            self.numClasses = self.config["numClasses"]
             self.channels = self.config["channels"]
         return
 

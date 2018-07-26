@@ -1,6 +1,7 @@
 {
   "root": "Dataset/PetImages",
   "imageSize":100,
+  "numClasses":2,
   "channels":1,
   "model":{
     "learningRate":0.003,

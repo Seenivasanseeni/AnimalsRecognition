@@ -14,21 +14,14 @@ def train(Mod,Ds,num=10):
     return
 
 def modTrain(Mod,Ds,num=10):
-    batch=Ds.makeBatchData(1000)
-    import  numpy as np
-    print(np.shape(batch["images"]))
-    for _ in range (num):
-        print("TRAIN")
-        for i in range(10):
+    trainBatch=Ds.makeBatchData(1000,train=True)
+    testBatch=Ds.makeBatchData(100,train=False)
 
-            acc, lo = Mod.train(batch["images"][i * 100:(i + 1) * 100], batch["outputs"][i * 100:(i + 1) * 100])
-            print("Timestep %d accuracy %f loss %f " %(i, acc, lo))
-
-
-    print("SEEN DATA")
-    for i in range(10):
-        acc, lo = Mod.train(batch["images"][i * 100:(i + 1) * 100], batch["outputs"][i * 100:(i + 1) * 100])
-        print("Timestep %d accuracy %f loss %f "%(i, acc, lo))
+    for epoch in range(num):
+        for i in range(9):
+            train_acc,train_lo=Mod.train(trainBatch["images"][i*(100):(i+1)*100],trainBatch["outputs"][i*100:(i+1)*100])
+            test_acc,test_lo=Mod.test(testBatch["images"],testBatch["outputs"])
+            print("epoch {} iter {} train loss{} train acc {} test loss {} test accu {}".format(epoch,i,train_lo,train_acc,test_lo,test_acc))
 
     return
 
@@ -51,8 +44,7 @@ def main():
     Mod.createCompGraph()
     Mod.intializeModel()
     Ds=Dataset.MicrosoftDataset(configLocation="Conf/dataset.json")
-    modTrain(Mod,Ds,num=10)
-    visualize(Mod,Ds)
+    modTrain(Mod,Ds,num=100)
     return
 
 

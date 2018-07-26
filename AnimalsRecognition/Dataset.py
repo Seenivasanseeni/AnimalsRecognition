@@ -120,6 +120,17 @@ def train_test_split(paths):
     index=int(len(paths) * 75/100)
     return paths[:index],paths[index:]
 
+def validFileFormat(file):
+    parts=file.split(".")
+    try:
+        temp=int(parts[0]) #invalid file will raise exception
+    except:
+        return False
+    return True
+
+def filterFiles(files):
+    return [file for file in files if validFileFormat(file)]
+
 
 class MicrosoftDataset():
 
@@ -137,7 +148,8 @@ class MicrosoftDataset():
         for label in self.labels:
             dirPath=os.path.join(self.root,label)
             for file in os.listdir(dirPath):
-                self.paths.append(os.path.join(dirPath,file))
+                if(validFileFormat(file)):
+                    self.paths.append(os.path.join(dirPath,file))
 
         random.shuffle(self.paths)
         self.trainPaths,self.testPaths=train_test_split(self.paths)
@@ -191,6 +203,7 @@ class MicrosoftDataset():
         return image, output
 
     def makeBatchData(self, batchSize=100,train=True):
+        train=True # it is needed in testing cases
         batch = {"images": [], "outputs": []}
         if (not train):
             batch = {"images": []}
