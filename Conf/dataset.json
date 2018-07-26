@@ -1,5 +1,5 @@
 {
-  "root": "/mnt/Backup/Dataset/CatsAndDogs",
+  "root": "Dataset/PetImages",
   "train":"train",
   "test":"test",
   "labels":["cat","dog"],

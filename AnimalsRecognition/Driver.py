@@ -50,7 +50,7 @@ def main():
     Mod=Model.Model()
     Mod.createCompGraph()
     Mod.intializeModel()
-    Ds=Dataset.Dataset(configLocation="Conf/dataset.json")
+    Ds=Dataset.MicrosoftDataset(configLocation="Conf/dataset.json")
     modTrain(Mod,Ds,num=10)
     visualize(Mod,Ds)
     return
