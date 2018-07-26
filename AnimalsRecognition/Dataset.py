@@ -27,7 +27,6 @@ def makeQueue(dir):
 def randomDataPath(Q):
     index = random.randrange(0, len(Q))
     path = Q[index]
-    Q.remove(path)
     return path
 
 
@@ -209,14 +208,16 @@ class MicrosoftDataset():
             batch = {"images": []}
 
         for _ in range(batchSize):
-            if (train):
-                image, output = self.makeData()
-                batch["images"].append(image)
-                batch["outputs"].append(output)
-            else:
-                image = self.makeData(train=False)
-                batch["images"].append(image)
-
+            try:
+                if (train):
+                    image, output = self.makeData()
+                    batch["images"].append(image)
+                    batch["outputs"].append(output)
+                else:
+                    image = self.makeData(train=False)
+                    batch["images"].append(image)
+            except:
+                print("ERROR: exception raised when  handling ")
         return batch
 
     def getClass(self, oneHotClass):

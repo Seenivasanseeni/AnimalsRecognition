@@ -20,7 +20,12 @@ class Model():
 
         inputImage = tf.reshape(self.input, shape=[-1, self.imageSize, self.imageSize, self.channels])
 
-        flat=tf.layers.flatten(inputImage)
+        self.conv1=tf.layers.conv2d(inputImage,32,kernel_size=[5,5],strides=2,activation=tf.nn.relu)
+
+        self.pool1=tf.layers.max_pooling2d(self.conv1,pool_size=[5,5],strides=2)
+
+
+        flat=tf.layers.flatten(self.pool1)
 
         self.dense=tf.layers.dense(flat,units=self.numClasses,activation=tf.nn.relu)
 
@@ -44,7 +49,6 @@ class Model():
         # summary items
         tf.summary.histogram("loss", self.loss)
         tf.summary.histogram("accuracy", self.accuracy)
-        tf.summary.histogram("dense",self.dense)
         return
 
     def intializeModel(self):

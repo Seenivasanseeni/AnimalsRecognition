@@ -4,7 +4,7 @@
   "numClasses":2,
   "channels":1,
   "model":{
-    "learningRate":0.003,
+    "learningRate":0.05,
     "dropout":0.8
   }
 }

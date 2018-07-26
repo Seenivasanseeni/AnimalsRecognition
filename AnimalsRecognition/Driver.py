@@ -14,12 +14,15 @@ def train(Mod,Ds,num=10):
     return
 
 def modTrain(Mod,Ds,num=10):
-    trainBatch=Ds.makeBatchData(5000,train=True)
+    #trainBatch=Ds.makeBatchData(1000,train=True)
     testBatch=Ds.makeBatchData(100,train=False)
 
     for epoch in range(num):
         for i in range(9):
-            train_acc,train_lo=Mod.train(trainBatch["images"][i*(100):(i+1)*100],trainBatch["outputs"][i*100:(i+1)*100])
+
+            #train_acc,train_lo=Mod.train(trainBatch["images"][i*(100):(i+1)*100],trainBatch["outputs"][i*100:(i+1)*100])
+            trainBatch=Ds.makeBatchData(100,train=True)
+            train_acc,train_lo=Mod.train(trainBatch["images"],trainBatch["outputs"])
             test_acc,test_lo=Mod.test(testBatch["images"],testBatch["outputs"])
             print("epoch {} iter {} train loss{} train acc {} test loss {} test accu {}".format(epoch,i,train_lo,train_acc,test_lo,test_acc))
 
@@ -44,7 +47,7 @@ def main():
     Mod.createCompGraph()
     Mod.intializeModel()
     Ds=Dataset.MicrosoftDataset(configLocation="Conf/dataset.json")
-    modTrain(Mod,Ds,num=100)
+    modTrain(Mod,Ds,num=1000)
     return
 
 

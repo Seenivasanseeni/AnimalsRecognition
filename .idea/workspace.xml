@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b08321e3-56cf-4390-a5e8-9affaba1af99" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnimalsRecognition/Dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/AnimalsRecognition/Dataset.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AnimalsRecognition/Driver.py" beforeDir="false" afterPath="$PROJECT_DIR$/AnimalsRecognition/Driver.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AnimalsRecognition/Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/AnimalsRecognition/Model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Conf/dataset.json" beforeDir="false" afterPath="$PROJECT_DIR$/Conf/dataset.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,8 +22,8 @@
       <file leaf-file-name="Dataset.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AnimalsRecognition/Dataset.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3114">
-              <caret line="179" column="20" selection-start-line="179" selection-start-column="20" selection-end-line="179" selection-end-column="20" />
+            <state relative-caret-position="-3">
+              <caret line="58" selection-start-line="58" selection-end-line="58" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -33,8 +34,8 @@
       <file leaf-file-name="Model.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AnimalsRecognition/Model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-93">
-              <caret line="73" column="47" lean-forward="true" selection-start-line="73" selection-start-column="47" selection-end-line="73" selection-end-column="47" />
+            <state relative-caret-position="162">
+              <caret line="24" column="53" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -54,17 +55,17 @@
       <file leaf-file-name="dataset.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Conf/dataset.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+            <state relative-caret-position="108">
+              <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Driver.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Driver.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AnimalsRecognition/Driver.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+            <state relative-caret-position="51">
+              <caret line="41" column="10" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
               <folding>
                 <element signature="e#1#28#0" expanded="true" />
               </folding>
@@ -72,7 +73,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Research.txt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Research.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AnimalsRecognition/Research.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="72">
@@ -115,11 +116,11 @@
         <option value="$PROJECT_DIR$/job1.sh" />
         <option value="$PROJECT_DIR$/AnimalsRecognition/tools.py" />
         <option value="$PROJECT_DIR$/AnimalsRecognition/Tests.txt" />
-        <option value="$PROJECT_DIR$/AnimalsRecognition/Dataset.py" />
         <option value="$PROJECT_DIR$/Conf/dataset.json" />
-        <option value="$PROJECT_DIR$/AnimalsRecognition/Research.txt" />
-        <option value="$PROJECT_DIR$/AnimalsRecognition/Model.py" />
         <option value="$PROJECT_DIR$/AnimalsRecognition/Driver.py" />
+        <option value="$PROJECT_DIR$/AnimalsRecognition/Dataset.py" />
+        <option value="$PROJECT_DIR$/AnimalsRecognition/Model.py" />
+        <option value="$PROJECT_DIR$/AnimalsRecognition/Research.txt" />
       </list>
     </option>
   </component>
@@ -461,7 +462,14 @@
       <option name="project" value="LOCAL" />
       <updated>1532597842677</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="ready to run on intel">
+      <created>1532611281225</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1532611281226</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TodoView">
@@ -579,7 +587,8 @@
     <MESSAGE value="Research on Not learning" />
     <MESSAGE value="confirm on way to learn" />
     <MESSAGE value="done" />
-    <option name="LAST_COMMIT_MESSAGE" value="done" />
+    <MESSAGE value="ready to run on intel" />
+    <option name="LAST_COMMIT_MESSAGE" value="ready to run on intel" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -876,13 +885,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AnimalsRecognition/Tests.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -904,20 +906,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conf/dataset.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/AnimalsRecognition/Dataset.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3114">
-          <caret line="179" column="20" selection-start-line="179" selection-start-column="20" selection-end-line="179" selection-end-column="20" />
+        <state relative-caret-position="-3">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Conf/dataset.json">
+    <entry file="file://$PROJECT_DIR$/AnimalsRecognition/Driver.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        <state relative-caret-position="51">
+          <caret line="41" column="10" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
+          <folding>
+            <element signature="e#1#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnimalsRecognition/Model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="24" column="53" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -925,26 +954,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AnimalsRecognition/Model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-93">
-          <caret line="73" column="47" lean-forward="true" selection-start-line="73" selection-start-column="47" selection-end-line="73" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AnimalsRecognition/Driver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-          <folding>
-            <element signature="e#1#28#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
